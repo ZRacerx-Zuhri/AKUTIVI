@@ -10,6 +10,7 @@ import {
   IoMdPlayCircle,
 } from "react-icons/io";
 import ContenVideos from "../../Content/Video";
+import Footer from "../../Component/Footer";
 
 const Home = (props) => {
   const containerStore = useRef();
@@ -260,6 +261,8 @@ const Home = (props) => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

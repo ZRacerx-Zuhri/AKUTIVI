@@ -1,5 +1,7 @@
 .container-home {
-  // border: springgreen 2px solid;
+  // border: springgreen 8px solid;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   @keyframes toRight {
     0% {
