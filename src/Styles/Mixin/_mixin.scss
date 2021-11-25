@@ -1,0 +1,42 @@
+@mixin respondTo($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==Ltablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==large {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+  @if $breakpoint==Xlarge {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@mixin keyframes($animation-name) {
+  @keyframes animation-name {
+    @content;
+  }
+}

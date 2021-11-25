@@ -1,0 +1,44 @@
+.container-menu-btn {
+  @include respondTo(phone) {
+    display: flex;
+  }
+  @include respondTo(tablet) {
+    display: flex;
+  }
+  border: none;
+  text-decoration: none;
+  outline: none;
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  //   border: 2px solid red;
+
+  &.open .menu-btn__burger:nth-child(2) {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  &.open .menu-btn__burger:first-child {
+    transform: rotate(42deg);
+  }
+  &.open .menu-btn__burger:last-child {
+    transform: rotate(-42deg);
+  }
+
+  .menu-btn__burger {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu-btn__burger:nth-child(2n + 1) {
+    transform-origin: 0 center;
+  }
+  .menu-btn__burger:nth-child(2n + 0) {
+    margin: 6px 0;
+  }
+}

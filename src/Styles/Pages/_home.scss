@@ -1,0 +1,367 @@
+.container-home {
+  // border: springgreen 2px solid;
+  min-height: 100vh;
+  @keyframes toRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes toLeft {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+  @keyframes comeRight {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes comeLeft {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .container-conten-home {
+    // border: solid rgb(255, 30, 0) 3px;
+    // min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container-conten-image {
+      // border: solid red 3px;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+
+      .carousel-container-aku {
+        // border: solid rgb(56, 179, 19) 3px;
+        position: relative;
+        min-height: 55vw;
+        max-height: 55vw;
+
+        @include respondTo(Xlarge) {
+          min-height: 48vw;
+        }
+        width: 100%;
+
+        .image-conten {
+          display: flex;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: 0;
+          width: 100%;
+
+          &.show-again {
+            display: flex;
+          }
+
+          &.show {
+            left: 0;
+          }
+          &.hidden-left {
+            left: -100%;
+          }
+          &.hidden-right {
+            left: 100%;
+          }
+          &.gone {
+            display: none;
+          }
+
+          &.hide-left {
+            animation: toLeft 0.5s ease-in-out forwards;
+          }
+          &.come-left {
+            animation: comeLeft 0.5s ease-in-out forwards;
+          }
+
+          &.hide-right {
+            animation: toRight 0.5s ease-in-out forwards;
+          }
+          &.come-right {
+            animation: comeRight 0.5s ease-in-out forwards;
+          }
+
+          .image-info {
+            position: relative;
+            // border: tomato 7px solid;
+            z-index: 3;
+            flex-grow: 1;
+            // padding: 20px;
+            .img-slide {
+              width: 100%;
+              height: 100%;
+              // border: solid springgreen 3px;
+            }
+
+            .container-info-conten {
+              // border: springgreen 2px solid;
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              z-index: 2;
+              background: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              top: 0;
+              right: 0;
+              left: 0;
+              color: rgb(255, 255, 255);
+
+              .icon-play-menu {
+                margin: auto;
+                display: flex;
+                margin-top: auto;
+                // background-color: rgba(255, 255, 255, 0.15);
+                // border: springgreen 2px solid;
+                padding: 0;
+                width: 100px;
+                height: 100px;
+                @include respondTo(tablet) {
+                  width: 72px;
+                  height: 72px;
+                }
+                @include respondTo(phone) {
+                  width: 52px;
+                  height: 52px;
+                }
+              }
+              .conten-title {
+                &-h2 {
+                  margin-bottom: 5px;
+                  font-size: 36px;
+                  font-family: "Raleway", sans-serif;
+                  font-family: "Roboto", sans-serif;
+                  @include respondTo(tablet) {
+                    font-size: 26px;
+                  }
+                  @include respondTo(phone) {
+                    font-size: 16px;
+                  }
+                }
+                &-h1 {
+                  font-size: 56px;
+                  font-family: "Raleway", sans-serif;
+                  font-family: "Roboto", sans-serif;
+                  @include respondTo(tablet) {
+                    font-size: 32px;
+                  }
+                  @include respondTo(phone) {
+                    font-size: 22px;
+                  }
+                }
+                position: absolute;
+                // border: springgreen solid 2px;
+                bottom: 10%;
+                margin-left: 10%;
+                // padding: 5%;
+              }
+            }
+          }
+        }
+      }
+
+      .container-btn-carousel {
+        // border: solid 3px red;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        background: linear-gradient(
+          90deg,
+          rgba(3, 2, 2, 0.699) 0%,
+          rgba(0, 0, 0, 0) 100%,
+          rgba(0, 0, 0, 0) 100%
+        );
+
+        .btn-right-carousel {
+          @include respondTo(phone) {
+            padding: 0px 16px;
+          }
+          padding: 0px 50px;
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .container-btn-carousel:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(3, 2, 2, 0.836) 0%,
+          rgba(0, 0, 0, 0) 100%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+
+      .container-btn-carousel:last-child:hover {
+        background: linear-gradient(
+          -90deg,
+          rgba(3, 2, 2, 0.774) 0%,
+          rgba(0, 0, 0, 0) 100%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+
+      .container-btn-carousel:last-child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        background: linear-gradient(
+          -90deg,
+          rgba(3, 2, 2, 0.699) 0%,
+          rgba(0, 0, 0, 0) 100%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        .btn-right-carousel {
+          @include respondTo(phone) {
+            padding: 0px 16px;
+          }
+          padding: 0px 50px;
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .container-leaderboard {
+    // border: solid greenyellow 2px;
+    margin-top: 36px;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    padding: 0 14px;
+    @include respondTo(phone) {
+      margin-top: 16px;
+    }
+    .img-leaderboard {
+      width: 100%;
+    }
+  }
+
+  .container-list-video {
+    // border: solid greenyellow 2px;
+    margin-top: 36px;
+    @include respondTo(phone) {
+      margin-top: 16px;
+    }
+    margin-bottom: 10%;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    padding: 0 14px;
+    h1 {
+      font-weight: bolder;
+      font-size: 32px;
+      font-family: "Raleway", sans-serif;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 16px;
+      @include respondTo(tablet) {
+        font-size: 22px;
+      }
+      @include respondTo(phone) {
+        font-size: 16px;
+      }
+    }
+
+    .container-conten-video {
+      // border: red solid 2px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      column-gap: 32px;
+      row-gap: 32px;
+
+      @include respondTo(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .card-video {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+
+        .conten-thumb-video {
+          // border: greenyellow 3px solid;
+          position: relative;
+          .container-card-info-video {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+
+            .icon-card-play-menu {
+              margin: auto;
+              display: flex;
+
+              padding: 0;
+              width: 60px;
+              height: 60px;
+
+              @include respondTo(phone) {
+                width: 52px;
+                height: 52px;
+              }
+            }
+          }
+          .thumb-video {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .title-card-video {
+          // border: solid springgreen 2px;
+          padding: 10px;
+          h5 {
+            font-family: "Lato", sans-serif;
+            font-family: "Nunito", sans-serif;
+            font-family: "Roboto", sans-serif;
+            color: rgb(80, 80, 80);
+            margin-bottom: 5px;
+          }
+          h3 {
+            font-family: "Lato", sans-serif;
+            font-family: "Nunito", sans-serif;
+            font-family: "Roboto", sans-serif;
+            color: rgb(80, 80, 80);
+          }
+        }
+      }
+    }
+  }
+}
