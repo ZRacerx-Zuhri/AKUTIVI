@@ -1,4 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
+import Baner_1 from "../../assets/images/banner_1.jpeg";
+import Baner_2 from "../../assets/images/banner_2.jpeg";
 
 import Header from "../../Component/Header";
 import ContenImages from "../../Content/Image";
@@ -234,11 +236,7 @@ const Home = (props) => {
         </div>
 
         <div className="container-leaderboard">
-          <img
-            className="img-leaderboard"
-            alt="three"
-            src="https://akutivi.com/dev/wp-content/themes/akutivi/assets/images/banner_1.jpg"
-          />
+          <img className="img-leaderboard" alt="three" src={Baner_1} />
         </div>
 
         <div className="container-list-video">
@@ -275,8 +273,14 @@ const Home = (props) => {
               ))}
             </div>
             <div className="container-bottom-nav">
-              <div>Category</div>
-              <div>Iklan</div>
+              {/* <div>Category</div> */}
+              <div className="container-board-bottom">
+                <img
+                  className="img-leaderboard-bottom"
+                  alt="three"
+                  src={Baner_2}
+                />
+              </div>
             </div>
           </div>
         </div>
