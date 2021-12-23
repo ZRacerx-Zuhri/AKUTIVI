@@ -11,10 +11,12 @@ import {
 } from "react-icons/io";
 import ContenVideos from "../../Content/Video";
 import Footer from "../../Component/Footer";
+import AllVideo from "../../Component/AllVideo";
 
 const Home = (props) => {
   const containerStore = useRef();
   const RefHead = useRef();
+  console.log(RefHead);
   const dimensions = useRefDimensions(RefHead);
 
   const [currentScreen, SetcurrentScreen] = useState(0);
@@ -184,48 +186,50 @@ const Home = (props) => {
         style={{ marginTop: dimensions.height }}
         className="container-conten-home"
       >
-        <div className="container-conten-image">
-          <div ref={containerStore} className="carousel-container-aku">
-            {ContenImages.map((val, idx) => (
-              <div key={idx} className={`image-conten`}>
-                <div className="image-info">
-                  <img
-                    src={val.ImageSrc}
-                    className="img-slide"
-                    alt={`img-${idx}`}
-                  />
-                  <div className="container-info-conten">
-                    <IoMdPlayCircle
-                      className="icon-play-menu"
-                      color="rgba(255, 255, 255, 0.5"
+        <div className="box-container-carrosel">
+          <div className="container-conten-image">
+            <div ref={containerStore} className="carousel-container-aku">
+              {ContenImages.map((val, idx) => (
+                <div key={idx} className={`image-conten`}>
+                  <div className="image-info">
+                    <img
+                      src={val.ImageSrc}
+                      className="img-slide"
+                      alt={`img-${idx}`}
                     />
+                    <div className="container-info-conten">
+                      <IoMdPlayCircle
+                        className="icon-play-menu"
+                        color="rgba(255, 255, 255, 0.5"
+                      />
 
-                    <div className="conten-title">
-                      <h2 className="conten-title-h2">{val.Category}</h2>
-                      <h1 className="conten-title-h1">{val.Description}</h1>
+                      <div className="conten-title">
+                        <h2 className="conten-title-h2">{val.Category}</h2>
+                        <h1 className="conten-title-h1">{val.Description}</h1>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          <div className="container-btn-carousel">
-            <button
-              disabled={IsAnime}
-              className="btn-right-carousel"
-              onClick={Prev}
-            >
-              <IoMdArrowDropleft size={36} color="#FFFF" />
-            </button>
-          </div>
-          <div className="container-btn-carousel">
-            <button
-              disabled={IsAnime}
-              className="btn-right-carousel"
-              onClick={Next}
-            >
-              <IoMdArrowDropright size={36} color="#FFFF" />
-            </button>
+              ))}
+            </div>
+            <div className="container-btn-carousel">
+              <button
+                disabled={IsAnime}
+                className="btn-right-carousel"
+                onClick={Prev}
+              >
+                <IoMdArrowDropleft size={36} color="#FFFF" />
+              </button>
+            </div>
+            <div className="container-btn-carousel">
+              <button
+                disabled={IsAnime}
+                className="btn-right-carousel"
+                onClick={Next}
+              >
+                <IoMdArrowDropright size={36} color="#FFFF" />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -240,24 +244,40 @@ const Home = (props) => {
         <div className="container-list-video">
           <h1>Feature Video</h1>
 
-          <div className="container-conten-video">
-            {ContenVideos.map((val, idx) => (
-              <div className="card-video" key={idx}>
-                <div className="conten-thumb-video">
-                  <div className="container-card-info-video">
-                    <IoMdPlayCircle
-                      className="icon-card-play-menu"
-                      color="rgba(255, 255, 255, 0.5"
+          <AllVideo ContenVideos={ContenVideos} />
+        </div>
+
+        <div className="conten-breakdown">
+          <h1>Latest Video</h1>
+          <div className="container-latest-video">
+            <div className="container-conten-latest-video">
+              {ContenVideos.slice(0, 4).map((val, idx) => (
+                <div className="container-thumb-latest-video">
+                  <div className="conten-thumb-latest-video">
+                    <div className="container-icon-play-latest-video">
+                      <IoMdPlayCircle
+                        className="icon-play-latest-video"
+                        color="rgba(255, 255, 255, 0.5"
+                      />
+                    </div>
+                    <img
+                      alt={idx}
+                      src={val.ImageSrc}
+                      className="thumb-video-latest"
                     />
                   </div>
-                  <img alt={idx} src={val.ImageSrc} className="thumb-video" />
+                  <div className="desc-latest-video">
+                    <h3>{val.Description}</h3>
+                    <h4>{val.Category}</h4>
+                    <p>{val.Message}</p>
+                  </div>
                 </div>
-                <div className="title-card-video">
-                  <h5>{val.Category}</h5>
-                  <h3>{val.Description}</h3>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="container-bottom-nav">
+              <div>Category</div>
+              <div>Iklan</div>
+            </div>
           </div>
         </div>
       </div>
