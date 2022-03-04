@@ -2,19 +2,22 @@
   // border: red solid 2px;
   display: grid;
 
-  column-gap: 32px;
+  column-gap: 22px;
   row-gap: 32px;
   @include respondTo(Xlarge) {
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25%, 0.35fr));
   }
   @include respondTo(large) {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25%, 0.34fr));
   }
   @include respondTo(desktop) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25%, 0.33fr));
   }
+  // @include respondTo(Ltablet) {
+  //   grid-template-columns: repeat(auto-fit, minmax(0.2fr, 0.4fr));
+  // }
   @include respondTo(tablet) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
   }
 
   @include respondTo(phone) {

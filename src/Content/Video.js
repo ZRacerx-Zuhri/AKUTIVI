@@ -1,55 +1,55 @@
 import images from "../assets/ImagesConten";
 
 let ContenVideos = [
-  {
-    ImageSrc: images["BimbelAsik_Teori_Deret_Part_1.jpg"].default,
-    Description: "BimbelAsik Teori Deret Part 1",
-    Category: "Education",
-    Message:
-      "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Deret. Kuy, kita simak !",
-    url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Deret.mp4",
-  },
+  // {
+  //   ImageSrc: images["BimbelAsik_Teori_Deret_Part_1.jpg"].default,
+  //   Description: "BimbelAsik Teori Deret Part 1",
+  //   Category: "Education",
+  //   Message:
+  //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Deret. Kuy, kita simak !",
+  //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Deret.mp4",
+  // },
 
-  {
-    ImageSrc: images["BimbelAsik_Teori_Deret_Part_2.jpg"].default,
-    Description: "BimbelAsik Teori Deret Part 2",
-    Category: "Education",
-    Message:
-      "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Deret. Kuy, kita simak !",
-    url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Deret_Bagian%202.mp4",
-  },
-  {
-    ImageSrc: images["BimbelAsik_Teori_Deret_Part_3.jpg"].default,
-    Description: "BimbelAsik Teori Deret Part 3",
-    Category: "Education",
-    Message:
-      "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Deret. Kuy, kita simak !",
-    url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Deret_Bagian%203.mp4",
-  },
-  {
-    ImageSrc: images["BimbelAsik_Teori_Pythagoras.jpg"].default,
-    Description: "BimbelAsik Teori Pythagoras",
-    Category: "Education",
-    Message:
-      "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras. Kuy, kita simak !",
-    url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras.mp4",
-  },
-  {
-    ImageSrc: images["BimbelAsik_Teori_Pythagoras_Ganjil.jpg"].default,
-    Description: "BimbelAsik Teori Pythagoras Ganjil",
-    Category: "Education",
-    Message:
-      "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras Ganjil. Kuy, kita simak !",
-    url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras%20Ganjil.mp4",
-  },
-  {
-    ImageSrc: images["BimbelAsik_Teori_Pythagoras_Genap.jpg"].default,
-    Description: "BimbelAsik Teori Pythagoras Genap.",
-    Category: "Education",
-    Message:
-      "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras Genap. Kuy, kita simak !",
-    url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras%20Genap.mp4",
-  },
+  // {
+  //   ImageSrc: images["BimbelAsik_Teori_Deret_Part_2.jpg"].default,
+  //   Description: "BimbelAsik Teori Deret Part 2",
+  //   Category: "Education",
+  //   Message:
+  //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Deret. Kuy, kita simak !",
+  //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Deret_Bagian%202.mp4",
+  // },
+  // {
+  //   ImageSrc: images["BimbelAsik_Teori_Deret_Part_3.jpg"].default,
+  //   Description: "BimbelAsik Teori Deret Part 3",
+  //   Category: "Education",
+  //   Message:
+  //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Deret. Kuy, kita simak !",
+  //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Deret_Bagian%203.mp4",
+  // },
+  // {
+  //   ImageSrc: images["BimbelAsik_Teori_Pythagoras.jpg"].default,
+  //   Description: "BimbelAsik Teori Pythagoras",
+  //   Category: "Education",
+  //   Message:
+  //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras. Kuy, kita simak !",
+  //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras.mp4",
+  // },
+  // {
+  //   ImageSrc: images["BimbelAsik_Teori_Pythagoras_Ganjil.jpg"].default,
+  //   Description: "BimbelAsik Teori Pythagoras Ganjil",
+  //   Category: "Education",
+  //   Message:
+  //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras Ganjil. Kuy, kita simak !",
+  //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras%20Ganjil.mp4",
+  // },
+  // {
+  //   ImageSrc: images["BimbelAsik_Teori_Pythagoras_Genap.jpg"].default,
+  //   Description: "BimbelAsik Teori Pythagoras Genap.",
+  //   Category: "Education",
+  //   Message:
+  //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras Genap. Kuy, kita simak !",
+  //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras%20Genap.mp4",
+  // },
   {
     ImageSrc: images["Eco_Sunnah_Lifestyle.jpeg"].default,
     Description: "Eco Sunnah Lifestyle",

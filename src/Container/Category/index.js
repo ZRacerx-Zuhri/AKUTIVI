@@ -3,12 +3,15 @@ import Header from "../../Component/Header";
 import { useParams } from "react-router-dom";
 import useRefDimensions from "../../Utilities/ResizeDimension";
 import ContenVideos from "../../Content/Video";
+import AllVideo from "../../Component/AllVideo";
 
-const Video = (props) => {
+import Banner1 from "../../Component/Banner";
+
+const CategoryVideo = (props) => {
   let { url } = useParams();
   const RefHead = useRef();
   const dimensions = useRefDimensions(RefHead);
-  // console.log(url);
+  console.log(props.Category);
 
   // console.log(ContenVideos.find((val) => val.Description === url));
   return (
@@ -16,21 +19,19 @@ const Video = (props) => {
       <Header ref={RefHead} />
       <div
         style={{ marginTop: dimensions.height }}
-        className="container-full-video"
+        className="container-category-video"
       >
-        <div className="container-play-video">
-          <div className="conten-play-video">
-            <video height="600" className="video" controls autoPlay loop>
-              <source
-                src={ContenVideos.find((val) => val.Description === url).url}
-                type="video/mp4"
-              />
-            </video>
-          </div>
+        <div className="list-video-category">
+          <AllVideo
+            ContenVideos={ContenVideos.filter(
+              (val) => val.Category === props.Category
+            )}
+          />
         </div>
+        <Banner1 />
       </div>
     </>
   );
 };
 
-export default Video;
+export default CategoryVideo;
