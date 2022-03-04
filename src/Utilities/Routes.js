@@ -11,7 +11,7 @@ export const routes = [
   {
     component: Video,
     name: "Video",
-    route: "/Video/:param",
+    route: "/Video/:url",
     exact: true,
   },
   {

@@ -1,12 +1,19 @@
-import { useState, useEffect } from "react";
 import { IoMdPlayCircle } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const AllVideo = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="container-conten-video">
       {props.ContenVideos.map((val, idx) => (
         <div className="card-video" key={idx}>
-          <div className="conten-thumb-video">
+          <div
+            onClick={() => {
+              // console.log("tes");
+              navigate(`/Video/${val.Description}`);
+            }}
+            className="conten-thumb-video"
+          >
             <div className="container-card-info-video">
               <IoMdPlayCircle
                 className="icon-card-play-menu"

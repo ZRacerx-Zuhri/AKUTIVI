@@ -14,16 +14,19 @@ import {
 import ContenVideos from "../../Content/Video";
 import Footer from "../../Component/Footer";
 import AllVideo from "../../Component/AllVideo";
+import { useNavigate } from "react-router-dom";
 
 const Home = (props) => {
   const containerStore = useRef();
   const RefHead = useRef();
-  console.log(RefHead);
+  let navigate = useNavigate();
+  // console.log(RefHead);
   const dimensions = useRefDimensions(RefHead);
 
   const [currentScreen, SetcurrentScreen] = useState(0);
 
   const [IsAnime, SetIsAnime] = useState(false);
+  const [loop, setLoop] = useState(0);
 
   useEffect(() => {
     document.title = `AKUTIVI | ${props.location}`;
@@ -63,6 +66,8 @@ const Home = (props) => {
 
   const Prev = () => {
     let screenStore = containerStore.current.childNodes;
+    setLoop(0);
+
     if (!IsAnime) {
       SetIsAnime(true);
       if (currentScreen > 0) {
@@ -100,6 +105,8 @@ const Home = (props) => {
   };
   const Next = () => {
     let screenStore = containerStore.current.childNodes;
+    setLoop(0);
+
     if (!IsAnime) {
       SetIsAnime(true);
       if (currentScreen < ContenImages.length - 1) {
@@ -135,6 +142,22 @@ const Home = (props) => {
       return;
     }
   };
+
+  useEffect(() => {
+    if (loop > 0) {
+      Next();
+    }
+  }, [loop]);
+
+  const [intervalId, setIntervalId] = useState();
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setLoop((val) => val + 1);
+    }, 7000);
+
+    return () => clearInterval(id);
+  }, []);
 
   const sortPositioning = (mainScreen, leftScreen, rightScreen) => {
     let screenStore = containerStore.current.childNodes;
@@ -192,7 +215,13 @@ const Home = (props) => {
           <div className="container-conten-image">
             <div ref={containerStore} className="carousel-container-aku">
               {ContenImages.map((val, idx) => (
-                <div key={idx} className={`image-conten`}>
+                <div
+                  onClick={() => {
+                    navigate(`/Video/${val.Description}`);
+                  }}
+                  key={idx}
+                  className={`image-conten`}
+                >
                   <div className="image-info">
                     <img
                       src={val.ImageSrc}
@@ -250,7 +279,7 @@ const Home = (props) => {
           <div className="container-latest-video">
             <div className="container-conten-latest-video">
               {ContenVideos.slice(0, 4).map((val, idx) => (
-                <div className="container-thumb-latest-video">
+                <div key={idx} className="container-thumb-latest-video">
                   <div className="conten-thumb-latest-video">
                     <div className="container-icon-play-latest-video">
                       <IoMdPlayCircle

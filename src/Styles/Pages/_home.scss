@@ -56,7 +56,7 @@
       // padding: 0 22px;
 
       .container-conten-image {
-        // border: solid red 3px;
+        // border: solid rgb(0, 255, 34) 3px;
         position: relative;
         display: flex;
         overflow: hidden;
@@ -67,6 +67,7 @@
 
         .carousel-container-aku {
           // border: solid rgb(56, 179, 19) 3px;
+          cursor: pointer;
           position: relative;
 
           @include respondTo(large) {
@@ -82,6 +83,7 @@
           width: 100%;
 
           .image-conten {
+            // border: solid rgb(56, 179, 19) 3px;
             display: flex;
             position: absolute;
             top: 0;
