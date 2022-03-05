@@ -376,6 +376,7 @@
 
           .conten-thumb-latest-video {
             // border: red solid 2px;
+            cursor: pointer;
             width: 380px;
             @include respondTo(Ltablet) {
               width: 65%;

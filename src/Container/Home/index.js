@@ -280,7 +280,13 @@ const Home = (props) => {
             <div className="container-conten-latest-video">
               {ContenVideos.slice(0, 4).map((val, idx) => (
                 <div key={idx} className="container-thumb-latest-video">
-                  <div className="conten-thumb-latest-video">
+                  <div
+                    onClick={() => {
+                      // console.log("tes");
+                      navigate(`/Video/${val.Description}`);
+                    }}
+                    className="conten-thumb-latest-video"
+                  >
                     <div className="container-icon-play-latest-video">
                       <IoMdPlayCircle
                         className="icon-play-latest-video"
