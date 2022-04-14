@@ -50,6 +50,109 @@ let ContenVideos = [
   //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras Genap. Kuy, kita simak !",
   //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras%20Genap.mp4",
   // },
+
+  {
+    ImageSrc:
+      images["Ide Resep Sahur Ghaida, Salah Satunya Bikin Badan Tetap Fit.jpg"]
+        .default,
+    Description: "Ide Resep Sahur Ghaida",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, masih bingung mau bikin hidangan untuk santap Sahur ya? Yuk kepoin menu sahur ala Ghaida. Jangan lupa untuk sahur ya teman-teman. Bukan hanya agar kita kuat menjalani ibadah Puasa. Tapi ada keberkahan di dalam Sahur itu sendiri. Selamat menjalankan Ibadah Puasa",
+    url: "https://akutivi.com/uploads/2022/04/Ide Resep Sahur Ghaida- Salah Satunya Bikin Badan Tetap Fit.mp4",
+  },
+  {
+    ImageSrc:
+      images["Ceklist Amalan di Bulan Ramadhan - Ghaida Tsurayya Part 1.jpg"]
+        .default,
+    Description: "Ceklist Amalan di Bulan Ramadhan - Part 1",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share amalan apa saja yang bisa kita lakukan di Bulan Ramadhan. Salah satu nya adalah Sahur. Diusahakan bangun ya saat waktu Sahur. Karena keberkahan ada di situ dan malaikat turun mendoakan kita.",
+    url: "https://akutivi.com/uploads/2022/04/Ceklist Amalan di Bulan Ramadhan - Ghaida Tsurayya Part 1.mp4",
+  },
+  {
+    ImageSrc:
+      images["Ceklist Amalan di Bulan Ramadhan - Ghaida Tsurayya Part 2.jpg"]
+        .default,
+    Description: "Ceklist Amalan di Bulan Ramadhan - Part 2",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share amalan apa saja yang bisa kita lakukan di Bulan Ramadhan. Diantaranya adalah perbanyaklah Sholat berjamaah. Jika tidak di mesjid. Sholat berjamaah bisa dengan suami, anak, anggota keluarga kita, karyawan atau teman.",
+    url: "https://akutivi.com/uploads/2022/04/Ceklist Amalan di Bulan Ramadhan - Ghaida Tsurayya Part 2.mp4",
+  },
+  {
+    ImageSrc: images["Ujian Yang Bermakna di Bulan Ramadhan.jpg"].default,
+    Description: "Ujian Yang Bermakna di Bulan Ramadhan",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, Ghaida yakin setiap episode yang Allah takdirkan dalam hidup kita sudah tertulis. Allah beri kita permasalahan sudah sepaket dengan solusi nya. Buat yang sedang merasa sedang diuji karena masalah pandemi Corona ini atau masalah lainnya marilah kita memanfaatkan bulan Ramadhan ini dengan baik.",
+    url: "https://akutivi.com/uploads/2022/04/Ujian Yang Bermakna di Bulan Ramadhan.mp4",
+  },
+  {
+    ImageSrc:
+      images["Memanfaatkan Waktu Selama Puasa Bijak Dengan Gadget.jpg"].default,
+    Description: "Memanfaatkan Waktu Selama Puasa",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share tentang memanfaatkan waktu selama bulan ramadhan ini, apakah gadget itu perlu dan bagaimana memanage-nya. Yuk, simak video ini sampai habis.",
+    url: "https://akutivi.com/uploads/2022/04/Memanfaatkan Waktu Selama Puasa Bijak Dengan Gadget.mp4",
+  },
+
+  {
+    ImageSrc: images["Tips Cantik Ramadhan.jpg"].default,
+    Description: "Tips Cantik Ramadhan",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share tutorial agar selalu terlihat cantik dan segar selama berpuasa. Yuk, simak tutorial dari Ghaida ini.",
+    url: "https://akutivi.com/uploads/2022/04/Tips Cantik Ramadhan.mp4",
+  },
+  {
+    ImageSrc: images["Tips Keluarga Harmonis.jpg"].default,
+    Description: " Tips Keluarga Harmonis",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share tentang bagaimana sebagai seorang ibu harus menjaga keharmonisan keluarga. Karena dengan keharmonisan keluarga kita bisa lebih khusu dalam menjalankan ibadah kita. Yuk, simak videonya.",
+    url: "https://akutivi.com/uploads/2022/04/Keluarga Harmonis Ghaida Tips Keluarga Harmonis.mp4",
+  },
+  {
+    ImageSrc:
+      images["Resep Buka Puasa Kurma Smoothies (Resep Simple).jpg"].default,
+    Description: "Resep Buka Puasa Kurma Smoothies",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share salah satu takjil buat buka puasa kurma smoothies. Alhamdulillah anak-anak suka resep ini. Yuk, simak video ini sampai habis.",
+    url: "https://akutivi.com/uploads/2022/04/Resep Buka Puasa Kurma Smoothies -Resep Simple-.mp4",
+  },
+  {
+    ImageSrc:
+      images["Tutorial MakeUpSimple agar Tetap Segar Saat Berpuasa.jpg"]
+        .default,
+    Description: "Tutorial #MakeUpSimple agar Tetap Segar Saat Berpuasa",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share tutorial make up simple agar selalu terlihat segar selama berpuasa. Yuk, simak tutorial dari Ghaida ini.",
+    url: "https://akutivi.com/uploads/2022/04/Tutorial MakeUpSimple agar Tetap Segar Saat Berpuasa.mp4",
+  },
+  {
+    ImageSrc:
+      images["Menu Sehat - Resep Bayam Tahu Sambal, Tahu Goreng dan Sambal.jpg"]
+        .default,
+    Description: "Menu Sehat - Resep Bayam Tahu Sambal, Tahu Goreng dan Sambal",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share mengenai Tips memasak simple di Bulan Ramadhan ini. Biar menu nya simple, tapi dengan melibatkan keluarga anak-anak hasil dan rasanya akan sangat istimewa.",
+    url: "https://akutivi.com/uploads/2022/04/Menu Sehat - Resep Bayam Tahu Sambal- Tahu Goreng dan Sambal.mp4",
+  },
+  {
+    ImageSrc: images["Resep Ayam Kampung Kecap ala Ghaida.jpg"].default,
+    Description: "Resep Ayam Kampung Kecap ala Ghaida",
+    Category: "Ramadhan",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau share amalan apa saja yang bisa kita lakukan di Bulan Ramadhan. Salah satu nya adalah Sahur. Diusahakan bangun ya saat waktu Sahur. Karena keberkahan ada di situ dan malaikat turun mendoakan kita.",
+    url: "https://akutivi.com/uploads/2022/04/Resep Ayam Kampung Kecap ala Ghaida.mp4",
+  },
+  //-//
   {
     ImageSrc: images["Eco_Sunnah_Lifestyle.jpeg"].default,
     Description: "Eco Sunnah Lifestyle",
@@ -58,6 +161,7 @@ let ContenVideos = [
       "Salah satu hikmah dari pandemi ini adalah kita kembali ke alam. Untuk mejaga kesehatan, kita perlu udara segar, dan semuanya ada di alam.",
     url: "https://akutivi.com/uploads/2021/10/EcoSunnahLifestyle.mp4",
   },
+
   {
     ImageSrc: images["Bermain_Bersama_Anak.jpeg"].default,
     Description: "Bermain Bersama Anak",

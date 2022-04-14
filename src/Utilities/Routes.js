@@ -36,6 +36,12 @@ export const routes = [
     exact: true,
   },
   {
+    component: () => <CategoryVideo Category={"Ramadhan"} />,
+    name: "Ramadhan",
+    route: "/Ramadhan",
+    exact: true,
+  },
+  {
     component: () => <div>Not Founds</div>,
     name: "Video",
     route: "*",

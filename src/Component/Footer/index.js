@@ -2,12 +2,13 @@ import IconIg from "../../assets/images/Ig.webp";
 import IconYoutube from "../../assets/images/youtube.png";
 
 const Footer = () => {
+  // console.log(new Date().getFullYear());
   return (
     <div className="container-footer">
       <div className="conten-footer">
         <div className="footer-title">
           <a href="https://akutivi.com" target="_blank" rel="noreferrer">
-            © 2021 - akutivi.com
+            © {new Date().getFullYear()}- akutivi.com
           </a>
         </div>
         <div className="footer-nav-icon">

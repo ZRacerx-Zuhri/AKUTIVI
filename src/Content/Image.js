@@ -8,6 +8,12 @@ let ContenImages = [
   // },
 
   // https://akutivi.com/dev/wp-content/uploads/2021/10/manajemenwaktu.jpg
+  {
+    ImageSrc: images["Tips Cantik Ramadhan.jpg"].default,
+    Description: "Tips Cantik Ramadhan",
+    Category: "Ramadhan",
+    url: "https://akutivi.com/uploads/2022/04/Tips Cantik Ramadhan.mp4",
+  },
 
   {
     ImageSrc: images["Bermain_Bersama_Anak.jpeg"].default,
