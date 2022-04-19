@@ -50,6 +50,82 @@ let ContenVideos = [
   //     "Belajar di rumah belum pernah mengasyikkan seperti ini. Kali ini Paman Apiq akan membahas cara asik mengenai Teori Pythagoras Genap. Kuy, kita simak !",
   //   url: "http://akutama.com/files/files/bimbelasik/Bimbel%20Asik_Cara%20Asik%20Teori%20Pythagoras%20Genap.mp4",
   // },
+  {
+    ImageSrc: images["Cinta-Kepada-Orang-Tua.png"].default,
+    Description: "Cinta Kepada Orang Tua",
+    Category: "Family",
+    Message:
+      "Assalamulaikum, Bagaimana kita membalas kebaikan orangtua? Simak video pengalaman Ghaida ini ya",
+    url: "https://akutivi.com/uploads/2022/04/Cinta-Kepada-Orang-Tua.mp4",
+  },
+  {
+    ImageSrc: images["Istiqomah-Berhijab.png"].default,
+    Description: "Istiqomah Berhijab",
+    Category: "Family",
+    Message:
+      "Assalamulaikum, Berat dalam menjalankan istiqomah dalam berhijab? Yuk, simak bagaimana Ghaida menjalaninya dan apa saja tips nya",
+    url: "https://akutivi.com/uploads/2022/04/Istiqomah-Berhijab.mp4",
+  },
+  {
+    ImageSrc: images["Jalan-Rizqi.png"].default,
+    Description: "Jalan Rizqi",
+    Category: "Family",
+    Message:
+      "Assalamulaikum, Buat kamu yang sedang bingung mencari jalan rizqi, yuk simak Video Inspirasi dari Ghaida",
+    url: "https://akutivi.com/uploads/2022/04/Jalan-Rizqi.mp4",
+  },
+  {
+    ImageSrc: images["kegiatan-rumah-yang-mengasikan.png"].default,
+    Description: "Kegiatan Rumah yang Mengasikan",
+    Category: "Family",
+    Message:
+      "Assalamulaikum, Buat kamu yang sedang bingung mencari jalan rizqi, yuk simak Video Inspirasi dari Ghaida",
+    url: "https://akutivi.com/uploads/2022/04/kegiatan-rumah-yang-mengasikan.mp4",
+  },
+
+  {
+    ImageSrc: images["Makanan-Favorit-Saat-Traveling.png"].default,
+    Description: "Makanan Favorit Saat Traveling",
+    Category: "Family",
+    Message:
+      "Assalamulaikum, Mau tau apa saja menu favorit Ghaida saat melakukan traveling? Yuk, kita intip video nya",
+    url: "https://akutivi.com/uploads/2022/04/Makanan-Favorit-Saat-Traveling.mp4",
+  },
+  {
+    ImageSrc: images["Menerima-Kehilangan.png"].default,
+    Description: "Menerima Kehilangan",
+    Category: "Family",
+    Message:
+      "Assalamulaikum, kali ini Ghaida mau berbagi bagaimana kita menyikapi saat kita sedang diuji kehilangan",
+    url: "https://akutivi.com/uploads/2022/04/Menerima-Kehilangan.mp4",
+  },
+
+  //--//
+
+  {
+    ImageSrc: images["Nuansa_Rumah_Shabby_Chic.png"].default,
+    Description: "Nuansa Rumah Shabby Chic",
+    Category: "Eco Life",
+    Message:
+      "Assalamulaikum, bingung pilih tema rumah kalian? Kali ini Ghaida mau share nuansa rumah Ghaida yang bertema Shabby Chic",
+    url: "https://akutivi.com/uploads/2022/04/Nuansa_Rumah_Shabby_Chic.mp4",
+  },
+  {
+    ImageSrc: images["Pojok_Favorit_Rumah_Ruang_Tamu.png"].default,
+    Description: "Pojok Favorit Rumah Ruang Tamu",
+    Category: "Eco Life",
+    Message:
+      "Assalamulaikum, Dimana nih pojok favorit kamu dirumah? Kalo Ghaida salah satunya adalah di Ruang Tamu",
+    url: "https://akutivi.com/uploads/2022/04/Pojok_Favorit_Ruang_Tamu.mp4",
+  },
+  {
+    ImageSrc: images["Pojok_Favorit_Rumah_Ruang_Keluarga.png"].default,
+    Description: "Pojok Favorit Rumah Ruang Keluarga",
+    Category: "Eco Life",
+    Message:
+      "Assalamulaikum, Selain ruang tamu.. Ruang keluarga adalah pojok rumah favorit bagi Ghaida dan keluarga",
+    url: "https://akutivi.com/uploads/2022/04/Pojok_Favorit_Rumah_Ruang_Keluarga.mp4",
+  },
 
   {
     ImageSrc:
